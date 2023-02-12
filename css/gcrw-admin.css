@@ -1,0 +1,71 @@
+#rating-writing h3#rating-title {
+  padding: 16px;
+  background: #f7f7f7;
+}
+
+#rating-writing #inner-meta li fieldset.rating {
+  margin: 0 0 8px;
+  float: left;
+}
+
+#rating-writing #inner-meta li fieldset.clear {
+  margin: 0 0 64px 4px;
+}
+
+#rating-writing #inner-meta li fieldset.rating:not(:checked) > input {
+  position: absolute;
+  left: -9999px;
+  clip: rect(0,0,0,0);
+}
+
+#rating-writing #inner-meta li fieldset.rating:not(:checked) > label {
+  font-family: FontAwesome;
+  float: right;
+  width: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  line-height: 1.2;
+  color: #efefef;
+}
+
+#rating-writing #inner-meta li fieldset.rating:not(:checked) > label:before {
+  content: "\f005";
+}
+
+input[type=radio]:checked+label:before {
+  color: #ffa400;
+}
+
+#rating-writing #inner-meta li fieldset.rating > input:checked ~ label {
+  color: #ffa400;
+}
+
+#rating-writing #inner-meta li fieldset.rating:not(:checked) > label:hover,
+#rating-writing #inner-meta li fieldset.rating:not(:checked) > label:hover ~ label {
+  color: #ffa400;
+  webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+#rating-writing #inner-meta li fieldset.rating > input:checked + label:hover,
+#rating-writing #inner-meta li fieldset.rating > input:checked + label:hover ~ label,
+#rating-writing #inner-meta li fieldset.rating > input:checked ~ label:hover,
+#rating-writing #inner-meta li fieldset.rating > input:checked ~ label:hover ~ label,
+#rating-writing #inner-meta li fieldset.rating > label:hover ~ input:checked ~ label {
+  color: #ffa400;
+  webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+#rating-writing #inner-meta li fieldset.rating > label:active {
+  color: #ffa400;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}

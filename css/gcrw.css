@@ -1,0 +1,103 @@
+aside.rating-writing {
+  margin: 64px 0;
+}
+
+aside.rating-writing h1.title-text {
+  margin: 0 0 12px;
+  padding: 2px 0 0 8px;
+  border-left: 8px #f2f2f2 solid;
+}
+
+aside.rating-writing table.rating-table {
+  border: 1px #efefef solid;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+aside.rating-writing table.rating-table tr th {
+  height: auto !important;
+  border: none !important;
+  font-weight: normal;
+  text-align: left;
+  padding: 7px 16px 4px;
+  background: #f2f2f2;
+}
+
+aside.rating-writing table.rating-table tr td {
+  width: 120px;
+  height: 32px !important;
+  border: none !important;
+  margin: 4px 8px 0;
+  background: white;
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.rate {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 24px;
+  font-family: FontAwesome;
+  font-size: 24px;
+}
+
+.rate:before,
+.rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\f005 \f005 \f005 \f005 \f005";
+  display: inline-block;
+}
+
+.rate:before {
+  color: #efefef;
+}
+
+.rate:after {
+  color: #ffa400;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+aside.rating-writing table.rating-table td.stars_01 span.rate:after,
+aside.rating-writing table.rating-table td.stars_06 span.rate:after,
+aside.rating-writing table.rating-table td.stars_11 span.rate:after,
+aside.rating-writing table.rating-table td.stars_16 span.rate:after,
+aside.rating-writing table.rating-table td.stars_21 span.rate:after {
+  width: 113.844px;
+}
+
+aside.rating-writing table.rating-table td.stars_02 span.rate:after,
+aside.rating-writing table.rating-table td.stars_07 span.rate:after,
+aside.rating-writing table.rating-table td.stars_12 span.rate:after,
+aside.rating-writing table.rating-table td.stars_17 span.rate:after,
+aside.rating-writing table.rating-table td.stars_22 span.rate:after {
+  width: 90px;
+}
+
+aside.rating-writing table.rating-table td.stars_03 span.rate:after,
+aside.rating-writing table.rating-table td.stars_08 span.rate:after,
+aside.rating-writing table.rating-table td.stars_13 span.rate:after,
+aside.rating-writing table.rating-table td.stars_18 span.rate:after,
+aside.rating-writing table.rating-table td.stars_23 span.rate:after {
+  width: 68px;
+}
+
+aside.rating-writing table.rating-table td.stars_04 span.rate:after,
+aside.rating-writing table.rating-table td.stars_09 span.rate:after,
+aside.rating-writing table.rating-table td.stars_14 span.rate:after,
+aside.rating-writing table.rating-table td.stars_19 span.rate:after,
+aside.rating-writing table.rating-table td.stars_24 span.rate:after {
+  width: 45px;
+}
+
+aside.rating-writing table.rating-table td.stars_05 span.rate:after,
+aside.rating-writing table.rating-table td.stars_10 span.rate:after,
+aside.rating-writing table.rating-table td.stars_15 span.rate:after,
+aside.rating-writing table.rating-table td.stars_20 span.rate:after,
+aside.rating-writing table.rating-table td.stars_25 span.rate:after {
+  width: 22px;
+}
